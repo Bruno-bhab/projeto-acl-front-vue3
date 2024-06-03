@@ -1,9 +1,8 @@
-import ContactView from '@/views/ContactView.vue'
 import AuthTemplate from '@/layouts/AuthTemplate.vue'
 import LoginView from '@/views/Auth/LoginView.vue'
 import ForgotPasswordView from '@/views/Auth/ForgotPasswordView.vue'
 import DefaultTemplate from '@/layouts/DefaultTemplate.vue'
-import HomeView from '@/views/HomeView.vue'
+import HomeAdminView from '@/views/admin/home/HomeAdminView.vue'
 
 export default [
   {
@@ -28,13 +27,8 @@ export default [
     children: [
       {
         path: '',
-        component: HomeView,
+        component: HomeAdminView,
         name: 'admin.home'
-      },
-      {
-        path: 'contact',
-        component: ContactView,
-        name: 'admin.contact'
       }
     ]
   }

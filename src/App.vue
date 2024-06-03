@@ -3,8 +3,8 @@
 <template>
   <aside>
     <ul>
-      <RouterLink to="home">Home</RouterLink>
-      <RouterLink to="contact">Contato</RouterLink>
+      <a href="/admin">Home</a>
+      <a href="/admin/contact">Contato</a>
     </ul>
   </aside>
 
